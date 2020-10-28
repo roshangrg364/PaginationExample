@@ -13,7 +13,7 @@
 <h2>Student List</h2>
 <!-- paging control for navigation to the previous page, next page, etc -->
 @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page = page }),
-    new X.PagedList.Mvc.Common.PagedListRenderOptions
+    new X.PagedList.Mvc.Core.Common.PagedListRenderOptions
     {
         DisplayItemSliceAndTotal = true,
         ContainerDivClasses = new[] { "navigation" },
